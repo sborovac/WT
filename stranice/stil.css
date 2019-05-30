@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://bananasbunch.org/wp-content/uploads/2015/11/8314929977_36b1d58cf6_o1.jpg);
+    padding-top: 150px;
+}
+
+#login {
+    background-color:  #ffe6ff;
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+    padding: 100px 50px 0px 100px;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid black;
+}
+
+input[type=button] {
+    margin-left:  190px;
+}
+
+@media only screen and (max-width: 600px) {
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+
+input[type=text], input[type=password] {
+    width: 90px;
+    border: 1px solid black;
+}
+
+form {
+    margin: auto;
+}
+
+input[type=button] {
+    margin-left: 120px;
+}
+}

@@ -1,0 +1,20 @@
+#okvir
+{
+background-color: #f9e6ff;
+}
+
+#glavniSadrzaj {
+background-color: #f2ccff;
+}
+
+form {
+background-color: #ecb3ff;
+}
+
+form p {
+text-align: center;
+}
+
+input[type=submit] {
+margin-left: 180px;
+}

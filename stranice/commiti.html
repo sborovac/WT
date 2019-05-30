@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Commiti </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="stillHF.css">
+    <link rel="stylesheet" type="text/css" href="stilPC.css">
+
+
+</head>
+<body id="body">
+
+        <header id="header">
+                <img id="logo" src="logo.png" alt="logo">
+                <p id="naslov"> Pregled commita </p>
+                    <nav id="meni">
+                        <ul>
+                            <li><a href="login.html"> Login </a></li>               
+                            <li><a href="studenti.html"> Pregled studenta </a> </li>
+                            <li><a href="zadaci.html"> Odabir vježbe </a> </li>
+                            <li><a href="commiti.html"> Pregled commita </a> </li>
+                            <li><a href="addZadatak.html"> Dodavanje zadatka </a> </li>
+                            <li><a href="addVjezba.html"> Dodavanje vježbe/spirale </a> </li>
+                            <li><a href="addStudent.html"> Dodavanje studenta </a> </li>
+                            <li><a href="addGodina.html"> Dodavanje godine </a> </li>
+                        </ul>
+                    </nav>  
+        </header>
+        
+
+
+<div id="glavniDio">
+<br/>
+<br/>
+
+<section>
+Student: Neko Nekic, 1234 
+<br/>
+<br/>
+Naziv vježbe/spirale: Vježba1
+<br/>
+<br/>
+Repozitorij: <a href="#"> Hyperlink </a>
+</section>
+
+<br/>
+
+<form name="napraviTabelu" action=#>
+    BrojZadataka: <input type="number">
+    <input type="submit" onclick="KreirajTabelu()" onsubmit="return false">
+</form>
+
+<br/>
+
+<form id="test" action=#>
+    Add Commit: 
+    <input type="number">
+    <input type="text" id="urlAdd">
+    <input type="submit" onclick="AddCommit()" onsubmit="return false"> <br/>
+    Edit Commit: 
+    <input type="number">
+    <input type="number">
+    <input type="text"> 
+    <input type="submit" onclick="EditCommit()" onsubmit="return false"> <br/>
+    Delete Commit:
+    <input type="number">
+    <input type="number">
+    <input type="submit" onclick="DeleteCommit()" onsubmit="return false"> 
+
+</form>
+
+
+<br/>
+
+<div id="myDiv">     
+        
+
+</div>
+
+<div id="greska"></div>
+
+
+</div>
+
+<footer>
+<p> Web Tehnologije 2018/19 </p>
+</footer>
+<script src="commititabela.js"> </script>
+<script src="commiti.js"> </script>
+<script src="validacija.js"></script>
+
+
+</body>
+</html>

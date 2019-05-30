@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> AddGodina </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="stillHF.css">
+    <link rel="stylesheet" type="text/css" href="stilAST.css">
+</head>
+<body onload="DodajGodinu()">
+
+        <div id="header">
+                <img id="logo" src="logo.png" alt="logo">
+                <p id="naslov"> Dodavanje godine </p>
+                    <nav id="meni">
+                        <ul>
+                            <li><a href="login.html"> Login </a></li>               
+                            <li><a href="studenti.html"> Pregled studenta </a> </li>
+                            <li><a href="zadaci.html"> Odabir vježbe </a> </li>
+                            <li><a href="commiti.html"> Pregled commita </a> </li>
+                            <li><a href="addZadatak.html"> Dodavanje zadatka </a> </li>
+                            <li><a href="addVjezba.html"> Dodavanje vježbe/spirale </a> </li>
+                            <li><a href="addStudent.html"> Dodavanje studenta </a> </li>
+                            <li><a href="addGodina.html"> Dodavanje godine </a> </li>
+                        </ul>
+                    </nav>  
+            </div>
+<div id="okvir">
+
+<div id="side">
+<p> Unos godine </p>
+<form action='http://localhost:8080/addGodina' method="POST">
+
+    Naziv godine <br/>
+    <input type="text" name="nazivGod" required>
+    <br/>
+    Naziv repozitorij vježbe <br/>
+    <input type="text" name="nazivRepVje" required> 
+    <br/>
+    Naziv repozitorija spirale <br/>
+    <input type="text" name="nazivRepSpi" required>
+    <br/>
+    <br/>
+    <input type="submit" name="submit" value="Poništi">
+    <input type="submit" name="unesi" value="Unesi" onclick="validirajFormu()">
+</form>
+
+<div id="greska"> </div>
+</div>
+
+<div id="glavniSadrzaj">
+
+</div>
+
+
+
+<footer>
+<p> Web Tehnologije 2018/19 </p>
+</footer>
+
+<script src="validacija.js"> </script>
+<script src="addGodina.js"> </script>
+<script src="GodineAjax.js"> </script>
+<script src="osvjeziAjax.js"> </script>
+<script src="ajax.js"> </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> AddVjezba </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="stillHF.css">
+    <link rel="stylesheet" type="text/css" href="stilDVS.css">
+    <link rel="stylesheet" type="text/css" href="stilOGSF.css">
+    <link rel="stylesheet" type="text/css" href="respozivniForma.css">
+</head>
+<body onload="Ucitaj()">
+
+        <div id="header">
+                <img id="logo" src="logo.png" alt="logo">
+                <p id="naslov"> Dodavanje vježbe/spirale </p>
+                    <nav id="meni">
+                        <ul>
+                            <li><a href="login.html"> Login </a></li>               
+                            <li><a href="studenti.html"> Pregled studenta </a> </li>
+                            <li><a href="zadaci.html"> Odabir vježbe </a> </li>
+                            <li><a href="commiti.html"> Pregled commita </a> </li>
+                            <li><a href="addZadatak.html"> Dodavanje zadatka </a> </li>
+                            <li><a href="addVjezba.html"> Dodavanje vježbe/spirale </a> </li>
+                            <li><a href="addStudent.html"> Dodavanje studenta </a> </li>
+                            <li><a href="addGodina.html"> Dodavanje godine </a> </li>
+                        </ul>
+                    </nav>  
+            </div>
+        
+
+<div id="okvir">
+
+<div id="glavniSadrzaj">
+
+<form name="fPostojeca" action='http://localhost:8080/addVjezba', method="POST">
+    <br/>
+    <p> Dodavanje postojeće vježbe/spirale </p>
+    <br/>
+    Godina
+    <select name="sGodine">
+         
+    </select>
+    <br/>
+    <br/>
+    <select name="sVjezbe">
+           
+    </select>
+    <br/>
+    <br/>
+    <input type="submit" name="dodaj" value="Dodaj" onclick="validirajPrvuFormu()" onsubmit="return false">
+    <div id="greskaPrvaForma"> </div>
+</form>
+
+<br/>
+
+<form name="fNova" action='http://localhost:8080/addVjezba', method="POST">
+    <br/>
+    <p> Nova vježba/spirala </p>
+    <br/>
+    Naziv vježbe
+    <input type="text" name="vjezbe" required>
+    <br/>
+    <br/>
+    Godina
+    <select name="sGodine">
+            
+    </select>
+    <br/>
+    <br/>
+    <input type="checkbox" name="spirala"> Spirala
+    <input type="submit" name="dodaj" value="Dodaj" onclick="validirajDruguFormu()" onsubmit="return false" >
+    <div id="greskaDruSgaForma"> </div>
+</form>
+</br>
+</br>
+<form name="fPoveziZadatak" method="POST">
+    <select name="sVjezbe" onchange="UcitajZadatke()">
+        
+    </select>
+</br>
+    <select name="sZadatak">
+        <option selected> Zadaci </option>
+      
+    </select>
+    <input type="submit" name="dZadatak" >
+</form>
+
+
+</div>
+
+<footer>
+<p> Web Tehnologije 2018/19 </p>
+</footer>
+
+<script src="validacija.js"> </script>
+<script src="addVjezba.js"> </script>
+<script src="UcitajGodine.js"> </script>
+<script src="Baza.js"> </script>
+<script src="UcitajZadatke.js"> </script>
+</div>
+</body>
+</html>

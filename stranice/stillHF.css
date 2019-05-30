@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body {
+margin: auto;
+}
+
+
+#header{
+    background-color: #ffeecc;
+    height: 180px;
+}
+
+
+
+
+
+nav li {
+    margin-right: 10px;
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+ }
+
+
+#naslov { 
+    font-family: Gabriela;
+    float: right;
+    color:blue;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+footer {
+    background-color: #ffeecc;
+    text-align: center;
+    clear:both;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+
+#naslov {
+    font-size: 30px;
+    float: right;
+    padding-right: 50px;
+    padding-top: 50px;
+    position: relative;
+    top: 80px;
+    right: 100px;
+}
+
+nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+       
+}
+nav {
+    position: relative;
+    bottom: 150px;
+    right: 135px;
+    display: flex;
+    float: right; 
+}
+
+
+nav li {
+    display: flex;
+    flex-direction: row;
+    }
+#header {
+    height: 200px;
+    overflow: hidden;
+}
+
+
+
+}

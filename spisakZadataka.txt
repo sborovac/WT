@@ -1,0 +1,5 @@
+Zadatak1, /Zadatak1.pdf
+Zadatak2, /Zadatak2.pdf
+Zadatak3, /Zadatak3.pdf
+Zadatak4, /Zadatak4.pdf
+Zadatak5, /Zadatak5.pdf

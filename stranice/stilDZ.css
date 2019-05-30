@@ -1,0 +1,26 @@
+#okvir {
+background-color: #e6e6ff;
+}
+
+#glavniSadrzaj {
+background-color: #ccccff;
+}
+
+form {
+background-color: #b3b3ff;
+}
+
+#noviZadatak p {
+text-align: center;
+}
+
+input[name=dodaj] {
+margin-left:180px;
+}
+
+@media only screen and (max-width: 600px) {
+
+#naslov {
+font-size: 25px;
+}
+}

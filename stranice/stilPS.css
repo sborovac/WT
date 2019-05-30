@@ -1,0 +1,85 @@
+#side {
+    background-color: #ffaa80;
+    display: block;
+    float:left;
+    height:350px;
+    width: 35%;
+}
+
+
+#side p
+{
+    text-align: center;
+}
+
+#side ul
+{
+    list-style-type: none;
+    overflow-y: scroll;
+    width: 180px;
+    margin: auto;
+    height: 250px;
+    background-color: #ffeee6;
+}
+
+table, td, th {
+    border: 1px solid black;
+
+} 
+
+th {
+    background-color: #ffcccc;
+}
+
+table 
+{
+    height: 150px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#glavniSadrzaj {
+    background-color: #ff8080;
+    display:block;
+    float: left;
+    width: 65%;
+    height: 350px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+#glavniDio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#side {
+    clear: both;
+    margin:auto;
+    order: 0;
+    width: 100%;
+}
+
+#glavniSadrzaj {
+    clear:both;
+    margin: auto;
+    order:1;
+    width: 100%;
+}
+
+table {
+    margin:auto;
+    margin-top: 80px;
+}
+
+footer {
+    order:2;
+}
+}

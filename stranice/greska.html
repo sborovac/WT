@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Studenti </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="stillHF.css">
+    <link rel="stylesheet" type="text/css" href="stilGreska.css">
+</head>
+
+<body>
+
+<header id="header">
+    <img id="logo" src="logo.png" alt="logo">
+    <p id="naslov"> GREŠKA </p>
+</header>
+
+<div id="greska">
+    <p id="textGreske">Desila se greška. Kliknite dugme da se vratite nazad!</p>
+    <input type="button" name="goBack" value="Nazad" onclick="goBack()">
+</div>
+
+<footer>
+<p> Web Tehnologije 2018/19 </p>
+</footer>
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+
+</body>
+</html>

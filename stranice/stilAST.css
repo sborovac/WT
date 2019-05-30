@@ -1,0 +1,84 @@
+body {
+margin:auto;
+}
+
+#side {
+display: block;
+background-color: #f2d9d9;
+float:left;
+width: 35%;
+height: 310px;
+}
+
+form {
+    margin-left: 150px;
+    margin-bottom: 10px;
+
+}
+
+p {
+text-align: center;
+}
+
+input[name=unesi] {
+margin-left: 60px;
+}
+
+
+#glavniSadrzaj {
+background-color: #ecc6c6;
+width:65%;
+height: auto;
+float:left;
+display:flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+height: 300px;
+padding-bottom: 10px;
+}
+
+.item {
+background-color: #e6b3b3;
+margin: auto 50px;
+height: 120px;
+width: 120px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+#okvir {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+#side {
+clear: both;
+margin:auto;
+order: 0;
+width: 100%;
+}
+
+#glavniSadrzaj {
+clear:both;
+margin: auto;
+order:1;
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+footer {
+    overflow: hidden;
+    order:2;
+}
+
+.item {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+}

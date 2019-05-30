@@ -1,0 +1,114 @@
+.cetvrtina {
+    background-color: #ffaa80;
+    display: block;
+    height:607px;
+    float: left;
+    width: 25%;
+   
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+
+.polovina {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffb3b3;
+    width: 50%; 
+    float: right;
+    overflow: hidden;
+}
+
+.folder p {
+    height: 20px;
+    text-align: start;
+}
+
+#godina, #imena {
+    list-style-type: none;
+    overflow-y: scroll;
+    width: 160px;
+    height: 300px;
+    margin: auto;
+    background-color: #ffeee6;
+}
+
+input[type=text] {
+    margin-left: 80px;
+}
+
+input[type=submit]{
+    margin-left: 130px;
+}
+
+.folder
+{
+    background-color:#ff884d;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 250px;
+    margin: auto;
+    width: 40%;
+    
+
+}
+
+.folder > .item {
+    background-color: #ff9999;
+    color: white;
+    text-align: center;
+    margin: auto 4px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+.cetvrtina p {
+    padding-top: 30px;
+    
+}
+
+
+#glavniDio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cetvrtina {
+    clear: both;
+    margin:auto;
+    order: 0;
+    
+    width:100%;
+    border: 1px solid black
+}
+
+.polovina {
+    clear: both;
+    margin:auto;
+    order:1;
+    width:100%;
+    border: 1px solid black
+}
+
+footer {
+    order:2;
+}
+
+input[type=text] {
+    margin-left: 120px;
+}
+
+input[type=submit] {
+    margin-left: 176px;
+}
+}
